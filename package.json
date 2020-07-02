@@ -1,0 +1,14 @@
+{
+  "name": "adserv",
+  "version": "1.0.0",
+  "description": "Serving affiliate links matching search tags over websocket",
+  "main": "Server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shittybill",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^7.3.0"
+  }
+}

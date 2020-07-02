@@ -1,0 +1,28 @@
+[{
+    "name":"Patreon",
+    "tags":"share,create,business,earning",
+    "data":{
+        "name":"Are you a creator?",
+        "link":"https://patreon.com/invite/jmkkjz",
+        "text":"Starting your own business or sharing your own creations has never been as easy as Patreon !",
+        "html":""
+    }
+},{
+    "name":"KiwiCo",
+    "tags":"kids,children,stem,school,daycare,elementry,highschool",
+    "data":{
+        "name":"KiwiCo",
+        "link":"",
+        "text":"Engage your kids with these super fun and engaging STEM activities from KiwiCo ! My boy loves putting these together and showing them off to his friends and I",
+        "html":""
+    }
+},{
+    "name":"Teachable",
+    "tags":"learn,teach,share,create",
+    "data":{
+        "name":"Like to learn? Like to teach?",
+        "link":"",
+        "text":"Try Teachable ! Build courses or coaching material in the way that you learn and then share and teach others",
+        "html":""
+    }
+}]
