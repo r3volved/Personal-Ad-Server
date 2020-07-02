@@ -1,3 +1,4 @@
+// test.js
 (async function main () {
 
     //Require client class
@@ -6,13 +7,16 @@
     //Init a new client with name and host
     const client = new Client({ 
         name : "My ad client",
-        host : "http://localhost:4321/"
+        host : "http://localhost:4321/",
+        maxRetries : 10,
+        timeRetries : 5000 //ms
     })
 
-    //Connect client (promise)
+    //Connect client (promise) 
+    //Optionally pass a reconnection function override
     await client.connect()
 
-    //Example allycode query (promise)
+    //Example query (promise)
     let search = ["create","share","learn"]
     let result = await client.get(search)
     let { data } = result
@@ -22,7 +26,8 @@
         ? `*${data.text.replace(new RegExp(`(${result.name})`,'i'), `[$1](${data.link})`)}*`
         : `*${data.text}*`
     
-    console.log([ title, desc ].join("\n"))
+    console.log( title )
+    console.log( desc )
 
     process.exit()
 
